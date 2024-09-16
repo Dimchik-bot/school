@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Казино Викторина</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Детская Викторина</h1>
+            <p>Найди пары картинок и отвечай на вопросы, чтобы выиграть призы!</p>
+        </header>
+
+        <section id="game-section">
+            <div class="memory-game">
+                <!-- Добавьте карточки здесь -->
+                <div class="card" data-pair="1">
+                    <img src="image1.png" alt="image1" class="front-face">
+                    <img src="back.png" alt="back" class="back-face">
+                </div>
+                <div class="card" data-pair="1">
+                    <img src="image1.png" alt="image1" class="front-face">
+                    <img src="back.png" alt="back" class="back-face">
+                </div>
+                <!-- Добавьте больше карточек по тому же шаблону -->
+            </div>
+
+            <button id="quiz-btn" disabled>Начать викторину</button>
+        </section>
+
+        <section id="quiz-section" style="display:none;">
+            <h2>Викторина</h2>
+            <p id="question"></p>
+            <div class="answers">
+                <button class="answer" data-answer="1"></button>
+                <button class="answer" data-answer="2"></button>
+                <button class="answer" data-answer="3"></button>
+                <button class="answer" data-answer="4"></button>
+            </div>
+            <p id="score"></p>
+        </section>
+
+        <footer>
+            <p>Удачи в игре и викторине!</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
